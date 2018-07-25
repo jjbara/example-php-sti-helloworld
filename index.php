@@ -56,6 +56,9 @@
         <h1>Hallo <?php echo 'APPUiO'?></h1>
         <p class="lead">APPUiO Example Source To Image PHP</p>
       </div>
+      <div class="button">
+        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+      </div>
 
     </div><!-- /.container -->
 
