@@ -57,8 +57,18 @@
         <p class="lead">APPUiO Example Source To Image PHP</p>
       </div>
       <div class="button">
-        <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+        <?php
+          function DoStuff() {
+            echo 'I just ran a php function';
+          }
+
+          if (isset($_GET['Button'])) {
+            DoStuff();
+          }
+        ?>
+        <button type="button" name="Button">Click Me!</button>
       </div>
+
 
     </div><!-- /.container -->
 
