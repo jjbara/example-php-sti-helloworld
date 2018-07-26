@@ -56,18 +56,24 @@
         <h1>Hallo <?php echo 'APPUiO'?></h1>
         <p class="lead">APPUiO Example Source To Image PHP</p>
       </div>
-      <div class="button">
-        <?php
-          function DoStuff() {
-            echo 'I just ran a php function';
-          }
-
-          if (isset($_GET['Button'])) {
-            DoStuff();
-          }
-        ?>
-        <button type="button" name="Button">Click Me!</button>
+      <div class="form">
+        <form action="index.php" method="post">
+			<input type="submit" name="click">
+		</form>
+		
       </div>
+	  <?php 
+		if (isset($_POST["click"])) 
+		{
+			$res=exec("test.sh");
+			echo($res);
+		}
+		else
+		{
+			echo "waitey";
+		}
+		?>
+	 
 
 
     </div><!-- /.container -->
