@@ -66,7 +66,7 @@
 		if (isset($_POST["click"])) 
 		{
 			$res=shell_exec("https://github.com/jjbara/example-php-sti-helloworld/blob/master/test.sh");
-			echo($res);
+			echo("test");
 		}
 		else
 		{
