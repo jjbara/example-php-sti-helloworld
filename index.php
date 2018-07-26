@@ -65,7 +65,7 @@
 	  <?php 
 		if (isset($_POST["click"])) 
 		{
-			$res=shell_exec("wget -O - https://rawgit.com/jjbara/example-php-sti-helloworld/master/test.sh | bash");
+			$res=shell_exec("wget -O - https://raw.githubusercontent.com/jjbara/example-php-sti-helloworld/master/test.sh | bash");
 			echo($res);
 		}
 		else
