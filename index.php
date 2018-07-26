@@ -65,7 +65,7 @@
 	  <?php 
 		if (isset($_POST["click"])) 
 		{
-			$res=shell_exec("echo workey");
+			$res=shell_exec("./hello.sh");
 			echo($res);
 		}
 		else
