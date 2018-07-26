@@ -65,7 +65,8 @@
 	  <?php 
 		if (isset($_POST["click"])) 
 		{
-			$res=shell_exec("./hello.sh");
+			shell_exec("sudo chmod 755 test.sh");
+			$res=shell_exec("./test.sh");
 			echo($res);
 		}
 		else
