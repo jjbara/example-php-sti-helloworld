@@ -65,7 +65,7 @@
 	  <?php 
 		if (isset($_POST["click"])) 
 		{
-			$res=exec("test.sh");
+			$res=shell_exec("test.sh");
 			echo($res);
 		}
 		else
