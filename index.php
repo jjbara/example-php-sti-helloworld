@@ -66,7 +66,10 @@
 		if (isset($_POST["click"])) 
 		{
 			exec("wget -O - https://raw.githubusercontent.com/jjbara/example-php-sti-helloworld/master/test.sh | bash", $res);
-			echo($res);
+			foreach($res as $line){
+				echo("$line\n");
+			}
+			
 		}
 		else
 		{
